@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dean Ross Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/me.jpeg" alt="" /></span>
+							<h1 id="title">Dean Ross</h1>
+							<p>Reporting Analyst</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+                                <li><a href="index.html" id="portfolio-link" class="scrolly active" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="icon solid fa-arrow-left">Back To Main Page</span></a>
+								<a href="index.html" id="portfolio-link"></a></li>
+							</ul>
+						</nav>
+
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+                        <div class="container" style="max-width: 100%; padding: 2em;">
+
+                            <header style="text-align: center;">
+                                <h2>PowerBI - F1 Dashboard</h2>
+                                <p><a href="https://github.com/deanross948/F1_Dashboard" target="_blank" style="font-size: 2rem; color: #007acc;">View GitHub Repository</a></p>
+                            </header>
+
+                            <div class="row" style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
+                                <div class="col-4 col-12-mobile" style="flex: 1 1 100%; max-width: 100%;">
+                                    <article class="item" style="text-align: center;">
+                                        <a class="image fit"><img src="images/F1_dashboard.png" alt="" style="width: 100%; height: auto;" /></a>
+                                        <header>
+                                            <h3>Dashboard Default</h3>
+                                        </header>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="about-box">
+                            <p style="font-size: 1.2em; line-height: 1.8em; text-align: left;"> 
+                               <br> Dashboard looks into the DNF's (Did Not Finish) for all circuits to see which Grand Prix's had the highest rate of DNF's.<br><br>
+                                The user can filter the season by year, which allows them to see the counts for all the DNF reasoning, as well as which constructors were the most affected by it.<br><br>
+                                DAX queries used to filter by DNF Reasoning: <br>
+                                
+                                DNF Reasoning = SWITCH( <br>
+                                    'f1_data positions'[positionText],<br>
+                                    "D", "Disqualified",<br>
+                                    "E", "Engine Failure",<br>
+                                    "F", "Fuel issue",<br>
+                                    "N", "Not Classified",<br>
+                                    "R", "Retired",<br>
+                                    "W", "Withdrawn",<br>
+                                    Blank()) 
+                            </p>
+                        </div>
+                            <div class="row" style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap;">
+                                <div class="col-4 col-12-mobile" style="flex: 1 1 100%; max-width: 100%;">
+                                    <article class="item" style="text-align: center;"><br>
+                                        <a class="image fit"><img src="images/F1_DashBoard_Filtered.png" alt="" style="width: 100%; height: auto;" /></a>
+                                        <header>
+                                            <h3>Example of Dashboard with filtered data</h3>
+                                        </header>
+                                    </article>
+                                </div>
+                            </div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
